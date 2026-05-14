@@ -24,6 +24,7 @@ require("neo-tree").setup({
       ["Z"] = "expand_all_subnodes",
     },
   },
+  close_if_last_window = true,
   event_handlers = {
     {
       event = "file_open_requested",
