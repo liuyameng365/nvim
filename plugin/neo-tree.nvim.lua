@@ -11,6 +11,9 @@ vim.pack.add({
 })
 require("neo-tree").setup({
   filesystem = {
+    -- 打开文件时使用当前窗口，不新建
+    -- hijack_netrw_behavior = 'open_current',
+    -- follow_current_file = { enabled = true },
     filtered_items = {
       visible = true,
       hide_dotfile = false,

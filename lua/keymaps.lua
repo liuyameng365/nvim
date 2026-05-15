@@ -41,7 +41,12 @@ end
 vim.keymap.set("n", "<leader>rf", "<Cmd>Neotree reveal focus<CR>", opts)
 vim.keymap.set("n", "<leader>t", "<Cmd>Neotree toggle<CR>", opts)
 
--- save file 
+-- save && quit file editor
 vim.keymap.set("n", "<leader>w", ":w<CR>", opts)
 vim.keymap.set("n", '<leader>q', ':q<CR>', opts)
 
+-- toggleterm
+vim.keymap.set("t", "<C-h>", [[<C-\><C-n><C-w>h]], opts)
+vim.keymap.set("t", "<C-j>", [[<C-\><C-n><C-w>j]], opts)
+vim.keymap.set("t", "<C-k>", [[<C-\><C-n><C-w>k]], opts)
+vim.keymap.set("t", "<C-l>", [[<C-\><C-n><C-w>l]], opts)
